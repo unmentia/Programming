@@ -1,10 +1,12 @@
 #include "../function.h"
 
 void if_13(){
-	printf("\n*Hafta kuni*\nMisol sharti:\nBerilgan son hafta kunining qaysi kuniga to'g'ri keladi? Agar kelgan son 1 ga teng bo'lsa, 'Dushanba'ni konsolga chiqaring. Agar kelgan son ikkiga teng bo'lsa, 'Seshanba'ni konsolga chiqaring va hz... Agar hafta kuniga to'g'ri kelmasa, 'none' konsolga chiqsin.\nNamuna:\nInput: 1\nOutput: Dushanba\n\nInput: 6\nOutput: Shanba\nSinab ko'rish: ");
+	printf("\n%s*Hafta kuni*\n\n%sMisol sharti:\n%sBerilgan son hafta kunining qaysi kuniga to'g'ri keladi? Agar kelgan son 1 ga teng bo'lsa, 'Dushanba'ni konsolga chiqaring. Agar kelgan son ikkiga teng bo'lsa, 'Seshanba'ni konsolga chiqaring va hz... Agar hafta kuniga to'g'ri kelmasa, 'none' konsolga chiqsin.\n\n%sNamuna:\n%sInput: %s1\n%sOutput: %sDushanba\n\n%sInput: %s6\n%sOutput: %sShanba\n\n%sSinab ko'rish!\n\n", yellow, green, white, green, violet, white, violet, white, violet, white, violet, white, green);
 	
 	int a;
+	printf("%sInput: ", violet);
 	scanf("%d", &a);
+	printf("Output: ");
 	if(a==1){
 		printf("Dushanba\n");
 	} else if(a==2){
