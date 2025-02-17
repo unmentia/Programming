@@ -1,7 +1,7 @@
 #include "../function.h"
 
 void loop_28(){
-	printf("\n%s*Romb*\n\n%sMisol sharti:\n%sn soni berilgan. Geometrik shaklni ekranga chiqaring. n bu yerda eng uzun yulduzlar soni (row number).\n\n%sNamuna:\n%sInput: %s5\n%sOutput:\n%s    *\n   * *\n  * * *\n * * * *\n* * * * *\n * * * *\n  * * *\n   * *\n    *\n\n%sSinab ko'rish!\n\n", yellow, green, white, green, violet, white, violet, white, green);
+	printf("\n%s*Romb*\n\n%sMisol sharti:\n%sn soni berilgan. Geometrik shaklni ekranga chiqaring. n bu yerda eng uzun yulduzlar (qator) soni.\n\n%sNamuna:\n%sInput: %s5\n%sOutput:\n%s    *\n   * *\n  * * *\n * * * *\n* * * * *\n * * * *\n  * * *\n   * *\n    *\n\n%sSinab ko'rish!\n\n", yellow, green, white, green, violet, white, violet, white, green);
 
 	int a;
 	printf("%sInput: ", violet);
