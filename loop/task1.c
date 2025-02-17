@@ -10,5 +10,5 @@ void loop_1(){
 	printf("Output: ");
     for(float i=1; i<=10; i++){
         result+=1/i;
-    } printf("%.2f\n", result);
+    } printf("%f\n", result);
 }

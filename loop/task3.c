@@ -9,7 +9,7 @@ void loop_3(){
 	printf("Output:\n");
     for(int y=0; y<a; y++){
         for(int x=0; x<a; x++){
-            printf("(%d,%d)", y, x);
+            printf("(%d,%d) ", y, x);
         } printf("\n");
     }
 }
