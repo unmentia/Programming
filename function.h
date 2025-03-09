@@ -100,4 +100,24 @@ void loop_33();
 void loop_34();
 void loop_35();
 
+void array_1();
+void array_2();
+void array_3();
+void array_4();
+void array_5();
+void array_6();
+void array_7();
+void array_8();
+void array_9();
+void array_10();
+void array_11();
+void array_12();
+void array_13();
+void array_14();
+void array_15();
+void array_16();
+void array_17();
+void array_18();
+void array_19();
+
 #endif

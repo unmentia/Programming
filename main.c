@@ -26,8 +26,7 @@ int main(){
 			printf("%s%c", red, yoho);
 		}
 
-		printf("\n\n%s1. If misollar to'plami\n2. For misollar to'plami\n3. Murakkab sikl\n\n", violet);
-		printf("%sTanlash uchun tartib raqamini kiriting: ", green);
+		printf("\n\n%s1. If misollar to'plami\n2. For misollar to'plami\n3. Murakkab sikl\n4. Array misollar to'plami\n\n%sTanlash uchun tartib raqamini kiriting: ", violet, green);
 		scanf("%s", inx);
 		system("clear");
 		
@@ -39,7 +38,7 @@ int main(){
 			continue;
 		}
 
-		if(sscanf(inx, "%d", &num) != 1 || num > 3 || num <= 0){
+		if(sscanf(inx, "%d", &num) != 1 || num > 4 || num <= 0){
 			system("clear");
 			printf("\n%sXatolik!\n\n", red);
 			continue;
@@ -285,7 +284,68 @@ int main(){
 					loop_35();
 				}
 			} while (1);	
-		} 
+		}
+		else if(inx[0] == '4'){
+			do{
+				printf("\n%s1. Eng katta element\n2. Eng kichik element\n3. O'rtacha qiymat\n4. Arrayda n bormi\n5. n chi index\n6. Array oxiriga son qo'shish\n7. Array boshiga son qo'shish\n8. a indexga b ni qo'shish\n9. n chi indexni olib tashlash\n10. Teskari array\n11. Arrayda n nechi marta bor\n12. O'xshash elementlar\n13. 2 ta arrayda o'xshash elementlar\n14. O'xshash elementlarni olib tashlash\n15. O'sish bo'yicha tartiblash\n16. Kamayish bo'yicha tartiblash\n17. Eng katta 2 chi element\n18. Elementlar yig'indisi a ga tengmi\n19. O'zaro teng arraylar\n\n%sTanlash uchun tartib raqamini kiriting: ", yellow, green);
+				scanf("%s", input);
+
+				if(input[0] == 'q'){
+					system("clear");
+					printf("\n%sDastur yakunlandi!\n\n", red);
+					return 0;
+				} else if(input[0] == 'c'){
+					system("clear");
+					continue;
+				}
+
+				if(sscanf(input, "%d", &num) != 1 || num > 19 || num <= 0){
+					system("clear");
+					printf("\n%sXatolik!\n", red);
+					continue;
+				}
+
+				if(num == 1){
+					array_1();
+				} else if(num == 2){
+					array_2();
+				} else if(num == 3){
+					array_3();
+				} else if(num == 4){
+					array_4();
+				} else if(num == 5){
+					array_5();
+				} else if(num == 6){
+					array_6();
+				} else if(num == 7){
+					array_7();
+				} else if(num == 8){
+					array_8();
+				} else if(num == 9){
+					array_9();
+				} else if(num == 10){
+					array_10();
+				} else if(num == 11){
+					array_11();
+				} else if(num == 12){
+					array_12();
+				} else if(num == 13){
+					array_13();
+				} else if(num == 14){
+					array_14();
+				} else if(num == 15){
+					array_15();
+				} else if(num == 16){
+					array_16();
+				} else if(num == 17){
+					array_17();
+				} else if(num == 18){
+					array_18();
+				} else if(num == 19){
+					array_19();
+				} 
+			} while (1);
+		}
 	} while(1); 
 	return 0;
 }
